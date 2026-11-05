@@ -1,0 +1,98 @@
+{
+  "crawls": {
+    "2026-10-30": 1082,
+    "2026-11-03": 1072
+  },
+  "temporal_labels": {
+    "closed": 53,
+    "live": 1029
+  },
+  "closed_urls_with_closed_text": 24,
+  "unique_closed_page_templates": 5,
+  "results": {
+    "keyword": {
+      "n": 205,
+      "closed_n": 5,
+      "live_n": 200,
+      "accuracy": 1.0,
+      "live_precision": 1.0,
+      "live_recall": 1.0,
+      "live_f1": 1.0,
+      "closed_precision": 1.0,
+      "closed_recall": 1.0,
+      "closed_f1": 1.0,
+      "by_source": {
+        "ashby": {
+          "n": 80,
+          "closed": 2,
+          "accuracy": 1.0,
+          "live_f1": 1.0,
+          "closed_f1": 1.0
+        },
+        "greenhouse": {
+          "n": 75,
+          "closed": 2,
+          "accuracy": 1.0,
+          "live_f1": 1.0,
+          "closed_f1": 1.0
+        },
+        "lever": {
+          "n": 50,
+          "closed": 1,
+          "accuracy": 1.0,
+          "live_f1": 1.0,
+          "closed_f1": 1.0
+        }
+      }
+    },
+    "tfidf_logreg_loo": {
+      "n": 155,
+      "closed_n": 5,
+      "live_n": 150,
+      "accuracy": 1.0,
+      "live_precision": 1.0,
+      "live_recall": 1.0,
+      "live_f1": 1.0,
+      "closed_precision": 1.0,
+      "closed_recall": 1.0,
+      "closed_f1": 1.0
+    },
+    "distilbert": {
+      "n": 205,
+      "closed_n": 5,
+      "live_n": 200,
+      "accuracy": 1.0,
+      "live_precision": 1.0,
+      "live_recall": 1.0,
+      "live_f1": 1.0,
+      "closed_precision": 1.0,
+      "closed_recall": 1.0,
+      "closed_f1": 1.0,
+      "by_source": {
+        "ashby": {
+          "n": 80,
+          "closed": 2,
+          "accuracy": 1.0,
+          "live_f1": 1.0,
+          "closed_f1": 1.0
+        },
+        "greenhouse": {
+          "n": 75,
+          "closed": 2,
+          "accuracy": 1.0,
+          "live_f1": 1.0,
+          "closed_f1": 1.0
+        },
+        "lever": {
+          "n": 50,
+          "closed": 1,
+          "accuracy": 1.0,
+          "live_f1": 1.0,
+          "closed_f1": 1.0
+        }
+      },
+      "note": "Closed templates were seen in training; live pages are held out. Treat closed scores as train recall, live scores as holdout."
+    }
+  },
+  "note": "Temporal closed = left the board between crawls. Classifier uses fetched closed page text vs live ad text."
+}
